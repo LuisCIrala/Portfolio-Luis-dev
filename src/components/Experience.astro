@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Desarrollador Web",
+    company: "Proyectos personales",
+    description:
+      "Soy desarrollador web con experiencia tanto en backend como en frontend. En el desarrollo backend, domino Python con frameworks como Django y FastAPI, así como bases de datos relacionales como MySQL y PostgreSQL. En el frontend, tengo sólidos conocimientos en HTML, CSS, JavaScript y TypeScript, utilizando frameworks modernos como Astro, Angular, Tailwind CSS y Bootstrap para crear interfaces atractivas y funcionales. Además, manejo herramientas clave para el desarrollo y la colaboración, como Git, GitHub, Postman y Docker, lo que me permite trabajar de manera eficiente en entornos ágiles y optimizar el ciclo de desarrollo.",
+    link: "https://www.linkedin.com/in/luis-alberto-caceres-irala-09ba5b318?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+  },
+  {
+    date: "Noviembre 2020",
+    title: "Tecnico Programador",
+    company: "CITSA",
+    description:
+      "3 Años como Soporte tecnico de clientes preferenciales, entre mis logros esta la mejora significativa en los tiempos trabajos realizados , resolucion de problemas y adaptabilidad .Solidifique mi conocimiento en administracion de sistemas y configuracion de equipos.",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
